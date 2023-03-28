@@ -53,3 +53,23 @@ void delay(void)
  for(i=0;i<100;i++)
  {}
 }
+
+//ANOTHER WAY TO BLINK LED
+#include <AT89S52.h>
+void wait(int);
+void main()
+{
+ while(1)
+ {
+  P2_0=!P2_0;
+  wait(20);
+ 
+ }
+}
+
+void wait(int n)
+{
+ int i;
+ for(i=0;i<n;i++)
+ {}
+}
